@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Reset do Body */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+/* Box do Login */
+
+.interface {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 30%;
+    height: 98vh;
+    padding: 3%;
+    border-radius: 25px;
+}
+
+/* Elementos do titulo */
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.titulo h1 {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.titulo h1::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #43e97b;
+    top: 85%;
+}
+
+/* Elementos do input */
+
+.input-dados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.input-dados input {
+    width: 80%;
+    margin-bottom: 10px;
+    height: 7.5vh;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    position: relative;
+}
+
+.input-dados textarea {
+    background-color: transparent;
+}
+
+.input-dados input::placeholder {
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+/* Lembre-me Elementos */
+
+.lembre-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.lembre-me #checkbox {
+    width: 12px;
+    margin-left: 20px;
+}
+
+.lembre-me label {
+    color: #25a750;
+    font-size: 0.8rem;
+}
+
+.lembre-me a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #25a750;
+}
+
+/* Conectar elemento */
+
+.conectar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    transition: 0.3s ease-out;
+}
+
+.conectar a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #14d655;
+    padding: 12px;
+}
+
+/* "Ou" elemento */
+
+.ou {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* Rede social Elementos */
+
+.rede-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}
+
+.rede-social a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.rede-social div {
+    cursor: pointer;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+}
+
+.rede-social > div a {
+    margin-left: 50px;
+}
+
+.rede-social > div i {
+    margin-top: 5px;
+}
+
+.facebook {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+    background: #3b5998;
+}
+
+.twitter {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+    background: #55acee;
+    margin-bottom: 1px;
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+    background: #fff;
+    margin-bottom: 1px;
+}
+
+.github a {
+    color: black;
+}
+
+.github {
+    border: 1px solid gray;
+}
+
+/* Style Hover */
+
+.rede-social > div:hover {
+    opacity: 0.7;
+}
+
+.conectar:hover {
+    opacity: 0.7;
+}
